@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char arr[10],ch;
+	int i,j,count,datas,size,val=0,data[10];
+	printf("Enter the string value:");
+	scanf("%s",&arr);
+	size=strlen(arr);
+	for(i=0;i<size;i++)
+	{
+		if((arr[i]>='0')&&(arr[i]<='9'))
+		{
+			val=(arr[i]-'0');	
+			for(j=0;j<val;j++)
+			{
+				ch=arr[i-1];
+				printf("%c",ch);
+			}
+	    }	
+	}
+	
+}
